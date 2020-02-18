@@ -19,11 +19,14 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            hoge
           }
         }
       }
     `
   )
+
+  console.log('site:', site);
 
   const metaDescription = description || site.siteMetadata.description
 
@@ -73,7 +76,7 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `ja`,
   meta: [],
   description: ``,
 }
