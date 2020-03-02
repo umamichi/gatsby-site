@@ -12,11 +12,20 @@ import Img from "gatsby-image"
  * - `gatsby-image`: https://gatsby.dev/gatsby-image
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
+ /* 訳）
+  * このコンポーネントは `gatsby-image`を使用して構築され、最適化された状態で自動的に提供されます
+  * 遅延読み込みとファイルサイズの縮小を伴う画像。画像は
+  * `useStaticQuery`。これにより、この中から直接画像をロードできます。
+  * コンポーネント。ページから画像データを渡す必要はありません。
+  * 詳細については、ドキュメントを参照してください。
+  *-`gatsby-image`：https://gatsby.dev/gatsby-image
+  *-`useStaticQuery`：https://www.gatsbyjs.org/docs/use-static-query/
+  */
 
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+      placeholderImage: file(relativePath: { eq: "picture1.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid

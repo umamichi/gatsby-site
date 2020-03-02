@@ -1,10 +1,13 @@
+// gatsby の設定ファイル
 module.exports = {
+  // metaタグ
   siteMetadata: {
     title: `Umamichi's Gatsby Sample Site 🍷`,
     description: `this is description in gatsby-config.js`,
     author: `@umamichi`,
     hoge: `hoge`
   },
+  // プラグイン
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
