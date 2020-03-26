@@ -11,20 +11,20 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>index.js</h1>
-    <p>
+    {/* <p>
       TODO weather information
-    </p>
+    </p> */}
     <div>
-      simple image by webpack import. 
+      sample image. 
       <br />
       <img src={picture1} alt="picture1" style={{ width: `300px`, marginBottom: `1.45rem` }} />
     </div>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       gatsby-image
       <br />
       <Image />
-    </div>
-    <Link to="/page-2/">/page-2</Link>
+    </div> */}
+    <Link to="/news/">/news</Link>
   </Layout>
 )
 
