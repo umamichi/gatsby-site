@@ -19,12 +19,16 @@ const IndexPage = () => (
       <br />
       <img src={picture1} alt="picture1" style={{ width: `300px`, marginBottom: `1.45rem` }} />
     </div>
-    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       gatsby-image
       <br />
       <Image />
-    </div> */}
+    </div>
     <Link to="/news/">/news</Link>
+    <br />
+    <Link to="/get-markdown/">マークダウンを取得するサンプル</Link>
+    <br />
+    <Link to="/contentful/">contentfulからデータを取得するサンプル</Link>
   </Layout>
 )
 
