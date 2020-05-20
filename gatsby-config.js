@@ -55,8 +55,21 @@ module.exports = {
       },
     },
     
+    // PWA manifest settings
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'umamichi gatsby sample site',
+        short_name: 'UMAMICHI',
+        start_url: '/?',
+        background_color: '#888', // アプリ起動時の背景色
+        theme_color: '#d23d29', // ブラウザツールバーの色
+        display: 'minimal-ui',　// アプリのスタイル
+      },
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
